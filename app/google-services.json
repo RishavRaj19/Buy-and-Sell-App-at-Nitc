@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "270613517348",
+    "firebase_url": "https://old-items-e-marketplace.firebaseio.com",
+    "project_id": "old-items-e-marketplace",
+    "storage_bucket": "old-items-e-marketplace.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:270613517348:android:f5e10428559f6336ec74b1",
+        "android_client_info": {
+          "package_name": "olditemse_marketplace.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "270613517348-njosqtn1ql1al0cu29buv9dd2fb1a8m1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAX-YFUlZrVfni1CL_S0lijZtbFVmNOaHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "270613517348-njosqtn1ql1al0cu29buv9dd2fb1a8m1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

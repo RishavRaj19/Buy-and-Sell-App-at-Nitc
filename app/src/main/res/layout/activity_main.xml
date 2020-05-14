@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_image_login">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbarMainActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:title="Login"
+                    app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+                    app:titleTextColor="#ffffff"
+                    android:background="?attr/colorPrimary">
+
+                </androidx.appcompat.widget.Toolbar>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="100dp"
+                    android:layout_height="90dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/edittext_shape"
+                            android:src="@drawable/nitc_logo"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/edittext_shape"
+                    android:textColorHint="@color/colorAccent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                        <EditText
+                            android:id="@+id/etUserEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/email_id"
+                            android:inputType="textEmailAddress"
+                            android:drawableLeft="@drawable/ic_action_name_email"
+                            android:drawableStart="@drawable/ic_action_name_email" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginHorizontal="40dp"
+                    android:layout_marginTop="30dp"
+                    android:textColorHint="@color/colorAccent"
+                    android:background="@drawable/edittext_shape"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true">
+
+                        <EditText
+                            android:id="@+id/etUserPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/password"
+                            android:inputType="textPassword"
+                            android:textColor="#000000"
+                            android:drawableLeft="@drawable/ic_action_name_password"
+                            android:drawableStart="@drawable/ic_action_name_password" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:layout_marginTop="50dp">
+
+                        <Button
+                            android:id="@+id/btnLogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/login"
+                            android:textColor="#000000"
+                            android:textSize="22sp"
+                            android:background="@drawable/edittext_shape"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="90dp">
+
+                        <TextView
+                            android:id="@+id/tvForgotPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/forgot_password"
+                            android:textColor="#ff0000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="8dp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="80dp">
+
+                        <TextView
+                            android:id="@+id/tvSignUpLink"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/new_user_signup"
+                            android:textColor="#ff7700"
+                            android:textSize="22sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="20dp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+</ScrollView>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:background="@drawable/background_image_home"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarHomeActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="HOME"
+        app:titleTextColor="#ffffff"
+        android:background="@color/colorPrimary"
+        app:menu="@menu/menu">
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:weightSum="2">
+
+            <TextView
+                android:id="@+id/tvBuy"
+                android:layout_width="145dp"
+                android:layout_height="170dp"
+                android:text="@string/buy"
+                android:drawableTop="@drawable/buy"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#009900"
+                android:gravity="center|bottom"
+                android:layout_weight="1">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tvSell"
+                android:layout_width="145dp"
+                android:layout_height="170dp"
+                android:text="@string/sell"
+                android:drawableTop="@drawable/sell"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#009900"
+                android:gravity="center|bottom"
+                android:layout_weight="1">
+            </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

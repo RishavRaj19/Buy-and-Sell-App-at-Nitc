@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SellActivity"
+    android:background="@drawable/background_sell_section">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarSellActivity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Sell Your Item"
+            app:titleTextAppearance="@style/TextAppearance.AppCompat.Large"
+            app:titleTextColor="#ffffff"
+            android:background="?attr/colorPrimary"
+            app:navigationIcon="@drawable/back_button">
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/ivProductImageSell"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittext_shape"
+                android:src="@drawable/sell_image"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/edittext_shape"
+            android:textColorHint="@color/colorAccent"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/etProductNameSell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/productName"
+                android:inputType="text"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="30dp"
+            android:textColorHint="@color/colorAccent"
+            android:background="@drawable/edittext_shape"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/etProductPriceSell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/productPrice"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:drawableLeft="@drawable/rupee"
+                android:drawableStart="@drawable/rupee" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="30dp"
+            android:textColorHint="@color/colorAccent"
+            android:background="@drawable/edittext_shape"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/etProductContactNoSell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/productContactNumber"
+                android:inputType="number"
+                android:textColor="#000000"
+                android:drawableLeft="@drawable/ic_action_name_call"
+                android:drawableStart="@drawable/ic_action_name_call" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/rgSell"
+            android:layout_height="32dp"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="40dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbCustomSell"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="@string/custom"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="#00BB00"
+                android:buttonTint="#990000"
+                android:checked="true"/>
+
+            <androidx.appcompat.widget.AppCompatRadioButton
+                android:id="@+id/rbDefaultSell"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="@string/defaultt"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="#00BB00"
+                android:buttonTint="#990000"/>
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="30dp"
+            android:textColorHint="@color/colorAccent"
+            android:background="@drawable/edittext_shape"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <EditText
+                android:id="@+id/etProductDescSell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/productDesc"
+                android:inputType="textAutoComplete"
+                android:textColor="#000000"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/btnUploadSell"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/upload"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:background="@drawable/edittext_shape"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+</ScrollView>

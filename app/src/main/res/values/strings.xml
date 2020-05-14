@@ -1,0 +1,37 @@
+<resources>
+    <string name="productName">Product Name </string>
+    <string name="productPrice">Price </string>
+    <string name="productStatus">Status </string>
+    <string name="productDesc">Description </string>
+    <string name="add_an_image">Add an Image</string>
+    <string name="productContactNumber">Contact Number</string>
+    <string name="email_id">Email ID</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="remove">Remove</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="name">Name</string>
+    <string name="contact">CONTACT</string>
+    <string name="email">EMAIL</string>
+    <string name="hostel">HOSTEL</string>
+    <string name="room">ROOM</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="new_user_signup">New User? SignUp!</string>
+    <string name="already_have_an_account_login">Already have an Account? Login!</string>
+    <string name="register">REGISTER</string>
+    <string name="hostel_name">Hostel Name</string>
+    <string name="go_to_login_page">Go to Login page !</string>
+    <string name="reset_password">RESET PASSWORD</string>
+    <string name="productRoomNumber"> Room Number </string>
+    <string name="buy">BUY</string>
+    <string name="sell">SELL</string>
+    <string name="upload">UPLOAD</string>
+    <string name="custom">Custom</string>
+    <string name="defaultt">Default</string>
+    <string name="go_back">Go Back</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

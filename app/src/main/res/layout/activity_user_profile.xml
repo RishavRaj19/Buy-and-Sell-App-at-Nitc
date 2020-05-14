@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191818"
+    android:orientation="vertical"
+    tools:context=".UserProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarUserProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@drawable/back_button"
+        app:title="Profile"
+        app:titleTextColor="#ffffff">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivUserProfilePicture"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="40dp"
+                android:contentDescription="@string/upload_image"
+                android:src="@drawable/profile_picture">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="vertical"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvUserProfileName"
+                        android:layout_width="70dp"
+                        android:layout_height="22dp"
+                        android:layout_margin="10dp"
+                        android:text="@string/name"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tvUserProfileNameValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvUserProfileContact"
+                        android:layout_width="70dp"
+                        android:layout_height="22dp"
+                        android:layout_margin="10dp"
+                        android:text="@string/contact"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tvUserProfileContactValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvUserProfileEmail"
+                        android:layout_width="70dp"
+                        android:layout_height="22dp"
+                        android:layout_margin="10dp"
+                        android:text="@string/email"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tvUserProfileEmailValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvUserProfileHostel"
+                        android:layout_width="70dp"
+                        android:layout_height="22dp"
+                        android:layout_margin="10dp"
+                        android:text="@string/hostel"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tvUserProfileHostelValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvUserProfileRoom"
+                        android:layout_width="70dp"
+                        android:layout_height="22dp"
+                        android:layout_margin="10dp"
+                        android:text="@string/room"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tvUserProfileRoomValue"
+                        android:layout_width="match_parent"
+                        android:layout_height="22dp"
+                        android:layout_margin="10dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
